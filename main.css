@@ -1,0 +1,100 @@
+body {
+    background: gray;
+    margin: 5px 5px 0 5px;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+header {
+    padding-top: 5px;
+    background: linear-gradient(#06a6cd, #a0a4a5);
+}
+
+header h4 {
+    display: inline;
+}
+
+header ul {
+    display: inline;
+}
+
+header ul li {
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.1s linear;
+}
+
+header ul li a:hover {
+    color: orange;
+}
+
+.dark {
+    color: white;
+    background: #333;
+}
+
+.light {
+    background: #999;
+}
+
+.centered {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#me {
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.textleft {
+    text-align: left;
+}
+
+.cols {
+    column-count: 2;
+    padding: 15px 0;
+}
+
+.photo {
+    position: relative;
+}
+
+.photo img {
+    position: absolute;
+    width: 100%;
+}
+
+.caption {
+    margin: 0;          /*remove the paragraph property*/
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: linear 0.1s;
+}
+
+.caption:hover {
+    opacity: 1;
+    background: rgba(100, 100, 100, 0.4);
+}
