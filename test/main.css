@@ -63,30 +63,23 @@ header ul li a:hover {
     text-align: left;
 }
 
-.gallery {
-    display: none;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
-
-.gallery li {
-    margin: 0 5px;
-    float: left;
-}
-
-.gallery2 div {
+.gallery div {
     position: relative;
     width: 50%;
     float: left;
     text-align: center;
 }
 
-.gallery2 div img {
+.gallery div img {
     position: relative;
     width: 97.4%;
     height: auto;
+    margin: 5px;
+}
+
+.photo {
+    position: absolute;
+    width: 100%;
     margin: 5px;
 }
 
