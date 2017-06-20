@@ -63,37 +63,38 @@ header ul li a:hover {
     text-align: left;
 }
 
-.gallery div {
+.col {
     position: relative;
     width: 50%;
     float: left;
     text-align: center;
 }
 
-.gallery div img {
-    position: relative;
-    width: 97.4%;
-    height: auto;
-    margin: 5px;
-}
-
 .photo {
-    position: absolute;
-    width: 100%;
-    margin: 5px;
+    position: relative;
 }
 
-.caption {
-    margin: 0;          /*remove the paragraph property*/
+.photo img {
+    position: relative;
+    width: 98%;
+    height: auto;
+    margin: 1%;
+}
+
+.photo p {
     position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    margin: 0;
+    padding: 8px;
+    font-weight: bold;
+    background: rgba(100, 100, 100, 0.8);
     opacity: 0;
-    transition: linear 0.1s;
+    transition: 0.1s linear;
 }
 
-.caption:hover {
+.photo:hover p {
     opacity: 1;
-    background: rgba(100, 100, 100, 0.4);
 }
