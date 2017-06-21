@@ -10,6 +10,17 @@ header {
     background: linear-gradient(#06a6cd, #a0a4a5);
 }
 
+.sub-nav {
+    background: none;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+.sub-nav ul {
+    padding: 0;
+}
+
 header h4 {
     display: inline;
 }
@@ -23,6 +34,16 @@ header ul li {
     padding: 5px;
     margin-bottom: 5px;
     display: inline-block;
+}
+
+.sub-nav ul li {
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 15px;
+}
+
+.current {
+    color: orange;
 }
 
 header ul li a {
@@ -53,6 +74,10 @@ header ul li a:hover {
 #main {
     margin-left: 100px;
     margin-right: 100px;
+}
+
+#main p {
+    margin-top: 0;
 }
 
 .textcenter {
@@ -93,6 +118,7 @@ header ul li a:hover {
     background: rgba(100, 100, 100, 0.8);
     opacity: 0;
     transition: 0.1s linear;
+    overflow: auto;
 }
 
 .photo:hover p {
