@@ -1,15 +1,3 @@
-body {
-    background: gray;
-    margin: 5px 5px 0 5px;
-    font-family: monospace;
-    font-size: 18px;
-}
-
-header {
-    padding-top: 5px;
-    background: linear-gradient(#06a6cd, #a0a4a5);
-}
-
 .sub-nav {
     background: none;
     text-align: center;
@@ -21,21 +9,6 @@ header {
     padding: 0;
 }
 
-header h4 {
-    display: inline;
-}
-
-header ul {
-    display: inline;
-}
-
-header ul li {
-    list-style: none;
-    padding: 5px;
-    margin-bottom: 5px;
-    display: inline-block;
-}
-
 .sub-nav ul li {
     font-size: 16px;
     margin: 0;
@@ -44,36 +17,6 @@ header ul li {
 
 .current {
     color: orange;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.1s linear;
-}
-
-header ul li a:hover {
-    color: orange;
-}
-
-.dark {
-    color: white;
-    background: #333;
-}
-
-.light {
-    background: #999;
-}
-
-.centered {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-#main {
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 #main p {
