@@ -38,6 +38,23 @@ header ul li a:hover {
     color: orange;
 }
 
+.sub-nav {
+    background: none;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+.sub-nav ul {
+    padding: 0;
+}
+
+.sub-nav ul li {
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 15px;
+}
+
 .dark {
     color: white;
     background: #333;
@@ -47,19 +64,52 @@ header ul li a:hover {
     background: #999;
 }
 
+.current {
+    color: orange;
+}
+
 .centered {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
+.photo-inline {
+    display: inline;
+    margin: 20px;
+}
+
+.shadowed {
+    box-shadow: 2px 0px 20px black;
+}
+
+.left {
+    float: left;
+    margin-right: 30px;
+}
+
 .right {
     float: right;
+    margin-left: 30px;
 }
 
 #main {
+    margin-top: 20px;
     margin-left: 100px;
     margin-right: 100px;
+}
+
+#main p {
+    text-indent: 2em;
+}
+
+#card {
+    display: inline;
+}
+
+#card p, #card h4 {
+    text-align: right;
+    text-indent: 0;
 }
 
 .textcenter {
