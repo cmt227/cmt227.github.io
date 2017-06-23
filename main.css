@@ -74,6 +74,11 @@ header ul li a:hover {
     transform: translate(-50%, 0);
 }
 
+#olympic {
+    width: 100%;
+    height: auto;
+}
+
 .photo-inline {
     display: inline;
     margin: 20px;
