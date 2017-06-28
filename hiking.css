@@ -15,6 +15,7 @@
     width: 50%;
     float: left;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .photo {
@@ -45,4 +46,21 @@
 
 .photo:hover p {
     opacity: 1;
+}
+
+.desktop {
+    display: inline;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (any-hover: false) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inline;
+    }
 }
