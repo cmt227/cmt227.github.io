@@ -1,6 +1,7 @@
 body {
     background: gray;
     margin: 0;
+    margin-bottom: 20px;
     font-family: monospace;
     font-size: 18px;
     min-width: 840px;
@@ -91,13 +92,10 @@ header ul li a:hover {
 
 .left {
     float: left;
-    margin-right: 30px;
 }
 
 .right {
-    display: inline;
     float: right;
-    margin-left: 30px;
 }
 
 #main {
@@ -106,10 +104,21 @@ header ul li a:hover {
     min-width: 600px;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
     #main {
-        width: 1100px;
+        width: 1000px;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .photo-inline {
+        margin: 10px auto;
+        margin-bottom: 25px;
+    }
+    .right, .left {
+        display: block;
+        float: none;
     }
 }
 

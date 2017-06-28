@@ -5,6 +5,7 @@
     <head>
         <title>Carsten's Portfolio</title>
         <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="hiking.css">
     </head>
 
     <body>
@@ -32,13 +33,15 @@
                     <a href="pedals.html">Guitar Pedals</a>
                 </li>
                 <li>
+                    <a href="linux.html">Computing</a>
+                </li>
+                <li>
                     <a href="#">RC Aircraft</a>
                 </li>
             </ul>
         </header>
 
         <p>
-            <img class="photo-inline left shadowed" src="img/amp/amp_smaller.jpg">
             <h4 class="textcenter">Overview</h4>
             During my senior year at Cornell University, I undertook the ambitious project of
             building a <a target="_blank" href="https://en.wikipedia.org/wiki/Class-D_amplifier">class D amplifier</a>
@@ -49,6 +52,26 @@
             my engineering education</a> to build a powerful and 
             functional amplifier.
         </p>
+        <div class="photo-container">
+            <div class="col">
+                <div class="photo">
+                    <img class="photo shadowed" src="img/amp/amp_smaller.jpg">
+                    <p>
+                        This photo is of my completed amplifier on top of a speaker cabinet that I also built.
+                        The knobs from left to right are: pre-amp gain, low, mid, and treble EQs, and 
+                        power-amp volume.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="photo">
+                    <img class="photo shadowed" src="img/amp/supply_and_pre.jpg">
+                    <p>
+                        This photo is of the finished power supply and preamplifier installed in the case.
+                    </p>
+                </div>
+            </div>
+        </div>
         <p>
             I wanted to build a class D amplifier partly for the novelty of it, which comes mostly from the fact
             that most people, engineers included, don't even know what <em>class D</em> means. I was also drawn to
@@ -60,6 +83,66 @@
             can be used to achieve an equivalent power ouput to the speaker load,
             which drastically reduces the weight and cost of parts. There are downsides to a class D amp too. The high 
             switching frequency introduces some hum on the output, and the clipping characteristics are really nasty.
+        </p>
+
+        <div class="photo-container">
+            <div class="col">
+                <div class="photo">
+                    <img class="photo shadowed" src="img/amp/pre.jpg">
+                    <p>
+                        Here is a close up of the preamplifier I built based on Rod Elliott's 
+                        <a target="_blank" href="http://sound.whsites.net/project27.htm">design</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="photo">
+                    <img class="photo shadowed" src="img/amp/power_amp.jpg">
+                    <p>
+                        Here is a photo of the completed power amplifier section. The output filter
+                        is composed of the large black inductor and blue capacitor on the left. The 16
+                        pin IC is the IRS2092 gate driver. The 5 pin TO-92 package on the left is the 
+                        half-bridge, and the other TO-92 packages are voltage regulators for the input
+                        section and the gate-driver floating power supply.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            I learned a lot while building this device. I'd never worked with power electronics before, so it
+            was edifying to construct a rather high voltage power supply (70 volts peak-to-peak in this case),
+            and through my readings and the help of my advisor I became confident in my ability to choose parts
+            that would work for this application, be safe, and be robust. After destroying a few PCB traces and 
+            blowing up a few power resistors due
+            to short circuits and other testing mishaps, I became more aware of the power of the device I'd built,
+            and also its capabilities and limitations too.
+        </p>
+        <p>
+            Another valuable take away from this project is the confidence I've gained in learning from
+            technical documentation. On my first attempt to build the power amp,
+            I merely copied the schematic of the reference design, and when I plugged it in I destroyed the
+            integrated circuit. I relized that this was a big waste of time and parts because I now had no way
+            to find where my error was, nor could I do much to fix it because all my parts were soldered onto
+            a PCB. So, I went back to the drawing board and thoroughly read all the documentation of the IRS2092,
+            which was great because I ended up learning how every part of the reference schematic worked. I then
+            successfully breadboarded the amplifier and ran it off of a lower voltage benchtop power supply before
+            soldering the parts to my re-designed PCB.
+        </p>
+        <p>
+            The build also taught me the importance of focusing on attention to detail from the very beginning
+            of a big project like this. There were times when I would be stuck on an issue for a few days that turned
+            out to be that a part was installed the wrong way!! That is frustrating, but I think I've learned my lesson.
+        </p>
+        <p>
+            Of course, I also learned a lot more about construction through this project. I drilled and milled the 
+            aluminum case in Cornell's student machine shop, and I learned a lot about schematic capture and
+            PCB design in <a target="_blank" href="http://kicad-pcb.org">KiCad</a>. My soldering skills were practiced
+            during many late nights.
+        </p>
+        <p>
+            To see more about the circuit of my power amplifier, checkout <a target="_blank" href="downloads/classDamp.pdf">this</a> 
+            pdf report I wrote about it!
         </p>
 
         </div>
